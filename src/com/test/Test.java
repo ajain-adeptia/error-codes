@@ -16,6 +16,7 @@ public class Test {
 		try {
 			throw new SystemException(
 					SourceErrorCode.ACCOUNT_CONFIGURATION_INCORRECT);
+			System.out.println("Unreachable Code");
 		} catch (SystemException e) {
 			if (e.getErrorCode() instanceof SourceErrorCode) {
 				System.out.println("Source Error");
